@@ -2,12 +2,12 @@
     insteadOf = https://gitlab.com/
 [url "https://github.com/"]
 	insteadOf = git://github.com/
-[includeIf "gitdir:TEMPLATED_SCM_HOME/github/"]
-    path = TEMPLATED_GIT_INCLUDES_PATH/github
-[includeIf "gitdir:TEMPLATED_SCM_HOME/gitlab/"]
-    path = TEMPLATED_GIT_INCLUDES_PATH/leftbin
-[includeIf "gitdir:TEMPLATED_SCM_WORK/"]
-    path = TEMPLATED_GIT_INCLUDES_PATH/work
+[includeIf "gitdir:/Users/dv/Personal/github/"]
+    path = /Users/dv/.dot-files/files/git/includes/dv/github
+[includeIf "gitdir:/Users/dv/Personal/gitlab/"]
+    path = /Users/dv/.dot-files/files/git/includes/dv/leftbin
+[includeIf "gitdir:/Users/dv/Documents/Work/"]
+    path = /Users/dv/.dot-files/files/git/includes/dv/work
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = false
