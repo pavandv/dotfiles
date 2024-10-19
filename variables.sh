@@ -19,6 +19,9 @@ export ZSH_CUSTOM="$DOT_FILES/custom"
 export PROFILE_BROWSER="safari"
 
 export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+export NVM_LAZY_LOAD_EXTRA_COMMANDS=('yarn')
+export NVM_AUTO_USE=true
 export NVM_DIR=~/.nvm
 
 export scmp="${HOME}/Personal"
