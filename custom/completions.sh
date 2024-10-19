@@ -9,7 +9,7 @@
     # source /usr/local/etc/bash_completion.d/az
 
     # autoload -U +X bashcompinit && bashcompinit
-    complete -o nospace -C "$(brew --prefix)/bin/terraform" terraform
+    # complete -o nospace -C "$(brew --prefix)/bin/terraform" terraform
 
     if type "gcloud" >&/dev/null; then
         source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"

@@ -2,45 +2,40 @@ version: 0.1.0
 symlinks:
   - - ~/.zshrc
     - ~/.dotfiles/.zshrc
+  - - ~/.antigenrc
+    - ~/.dotfiles/.antigenrc
   - - ~/.config/starship.toml
     - ~/.dotfiles/.starship.toml
   - - ~/.hammerspoon/init.lua
     - ~/.dotfiles/.hammerspoon-init.lua
+  - - ~/.gitconfig
+    - ~/.dotfiles/gitconfig
 bundle:
+  ide:
+    - cursor.cask
+    - visual-studio-code@insiders.cask
+    - jetbrains-toolbox.cask
+  comms:
+    - discord.cask
+    - microsoft-teams.cask
+    - whatsapp@beta.cask
+  aws:
+    - awscli.bin
+  databases:
+    - postgresql@16.bin
+    - dbeaver-community.cask
   default:
     - font-meslo-lg-nerd-font.cask
     - karabiner-elements.cask
     - obsidian.cask
     - rectangle.cask
+  lang:
+    - golang.bin
+    - rustup.bin
   ai:
     - chatgpt.cask
-  aws:
-    - awscli.bin
-  azure:
-    - azure-cli.bin
-  browsers:
-    - arc.cask
-    - microsoft-edge@dev.cask
-    - google-chrome@dev.cask
-  comms:
-    - discord.cask
-    - microsoft-teams.cask
-    - whatsapp@beta.cask
-  databases:
-    - postgresql@16.bin
-    - dbeaver-community.cask
   gcloud:
     - google-cloud-sdk.cask
-  git:
-    - gh.bin
-    - microsoft/git/git-credential-manager.cask
-  iac:
-    - pulumi.bin
-    - project-planton/tap/cli.bin
-  ide:
-    - cursor.cask
-    - visual-studio-code@insiders.cask
-    - jetbrains-toolbox.cask
   k8s:
     - orbstack.cask
     - helm.bin
@@ -48,6 +43,15 @@ bundle:
     - kubectl.bin
     - kubectx.bin
     - stern.bin
-  lang:
-    - golang.bin
-    - rustup.bin
+  azure:
+    - azure-cli.bin
+  browsers:
+    - arc.cask
+    - microsoft-edge@dev.cask
+    - google-chrome@dev.cask
+  git:
+    - gh.bin
+    - microsoft/git/git-credential-manager.cask
+  iac:
+    - pulumi.bin
+    - project-planton/tap/cli.bin

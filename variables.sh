@@ -7,13 +7,13 @@
 
 export EDITOR="cursor";
 
-export DOT_FILES=${DOT_FILES:-~/.dot-files};
+export DOT_FILES=${DOT_FILES:-~/.dotfiles};
 export dtf_location=$DOT_FILES;
 export DOT_FILES_C="$EDITOR $DOT_FILES";
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh";
-export ZSH_CUSTOM=~/.dot-files/custom
+# export ZSH="$HOME/.oh-my-zsh";
+export ZSH_CUSTOM="$DOT_FILES/custom"
 
 ## User Defined Modules
 export PROFILE_BROWSER="safari"
@@ -55,7 +55,7 @@ export scmw="${HOME}/Documents/Work"
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -79,30 +79,30 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(
-    autoupdate
-    custom-az
-    custom-git
-    custom-terraform
-    common-aliases
-    # dircycle
-    # docker
-    generic
-    git
-    # git-prompt
-    history-substring-search
-    # helm
-    jira
-    # jsontools
-    kubectl
-    npm
-    # per-directory-history
-    rust
-    ssh
-    # web-search
-    zsh-autosuggestions
-    # zsh-interactive-cd
-    yarn
-    zsh-nvm
-    zsh-syntax-highlighting # this should always be loaded at the last
-)
+# plugins=(
+#     autoupdate
+#     custom-az
+#     custom-git
+#     custom-terraform
+#     common-aliases
+#     # dircycle
+#     # docker
+#     generic
+#     git
+#     # git-prompt
+#     history-substring-search
+#     # helm
+#     jira
+#     # jsontools
+#     kubectl
+#     npm
+#     # per-directory-history
+#     rust
+#     ssh
+#     # web-search
+#     zsh-autosuggestions
+#     # zsh-interactive-cd
+#     yarn
+#     zsh-nvm
+#     zsh-syntax-highlighting # this should always be loaded at the last
+# )
