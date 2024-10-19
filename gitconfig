@@ -1,0 +1,32 @@
+[url "git@gitlab.com:"]
+    insteadOf = https://gitlab.com/
+[url "https://github.com/"]
+	insteadOf = git://github.com/
+[includeIf "gitdir:TEMPLATED_SCM_HOME/github/"]
+    path = TEMPLATED_GIT_INCLUDES_PATH/github
+[includeIf "gitdir:TEMPLATED_SCM_HOME/gitlab/"]
+    path = TEMPLATED_GIT_INCLUDES_PATH/leftbin
+[includeIf "gitdir:TEMPLATED_SCM_WORK/"]
+    path = TEMPLATED_GIT_INCLUDES_PATH/work
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = false
+	whitespace = cr-at-eol
+	editor = code-insiders --wait
+	fscache = true
+	preloadindex = true
+[color]
+	status = always
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code-insiders --wait --diff $LOCAL $REMOTE
+[alias]
+    hist = log --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lo = log --pretty=oneline --abbrev-commit
+[credential]
+	helper = manager-core
+	helper = ""
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true

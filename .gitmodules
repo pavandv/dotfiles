@@ -1,0 +1,15 @@
+[submodule "plugins/zsh-nvm"]
+   path = plugins/zsh-nvm
+   ignore = all
+[submodule "plugins/zsh-syntax-highlighting"]
+   path = plugins/zsh-syntax-highlighting
+   ignore = all
+[submodule "plugins/zsh-autosuggestions"]
+   path = plugins/zsh-syntax-highlighting
+   ignore = all
+[submodule "plugins/autoupdate"]
+   path = plugins/autoupdate
+   ignore = all
+[submodule "themes/powerlevel10k"]
+   path = themes/powerlevel10k
+   ignore = all

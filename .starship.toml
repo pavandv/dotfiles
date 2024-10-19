@@ -1,0 +1,185 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+right_format = """
+    [](cyan)\
+    $cmd_duration\
+    [](bg:cyan fg:purple)\
+    $c\
+    $golang\
+    $java\
+    $nodejs\
+    $rust\
+    []( bg:purple fg:green)\
+    $kubernetes\
+    $terraform\
+    $pulumi\
+    [](bg:green fg:red)\
+    $status\
+    [](red)\
+"""
+
+format = """
+[](purple)\
+    $os\
+    $username\
+    [](bg:orange fg:purple)\
+    $directory\
+    [](fg:orange bg:yellow)\
+    $git_branch\
+    $git_status\
+    [](fg:yellow bg:blue)\
+    $gcloud\
+    $azure\
+    $aws\
+[](fg:blue)\
+"""
+
+# Disable the blank line at the start of the prompt
+add_newline = true
+
+palette = 'inherenc'
+
+[palettes.inherenc]
+blue = '#4285f4'
+green = '#06969A'
+orange = '#DA627D'
+yellow = '#FCA17D'
+cyan = '#86BBD8'
+purple = '#9A348E'
+
+[aws]
+    format = '[$symbol ($profile)(\($region\) )]($style)'
+    style = 'bold bg:#4285f4 fg:white'
+    # symbol = ' 🅰 '
+    symbol = " ☁️"
+    # [aws.region_aliases]
+    # us-east-1 = 'va'
+
+[azure]
+    disabled = true
+    format = '[ $symbol($subscription) ]($style)'
+    symbol = 'ﴃ '
+    style = 'bg:blue fg:white bold'
+
+
+[gcloud]
+    format = '[ $symbol$account | $active]($style)'
+    symbol = " " #"☁️ " # "☁️ "
+    style = 'bold bg:blue fg:white'
+
+[pulumi]
+    disabled = false
+    format = '[| $symbol($username@)$stack ]($style)'
+    style = 'bg:blue fg:white bold'
+
+[terraform]
+    format = '[$symbol$workspace(\($version\))]($style)'
+    style = 'bold bg:green'
+
+# You can also replace your username with a neat symbol like   or disable this
+# and use the os module below
+[username]
+    show_always = true
+    style_user = "bg:purple fg:white"
+    style_root = "bg:purple"
+    format = '[$user]($style)'
+    disabled = true
+
+# An alternative to the username module which displays a symbol that
+# represents the current operating system
+[os]
+    style = "bg:purple fg:white bold"
+    disabled = false # Disabled by default
+
+[os.symbols]
+    # Macos = " "
+    Macos = "\ue711 "
+
+[directory]
+    style = "bg:orange fg:white"
+    format = "[$path]($style)"
+    truncation_length = 3
+    truncation_symbol = "…/"
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+    "Documents" = " "
+    "Downloads" = " "
+    "Music" = " "
+    "Pictures" = " "
+    # Keep in mind that the order matters. For example:
+    # "Important Documents" = "  "
+    # will not be replaced, because "Documents" was already substituted before.
+    # So either put "Important Documents" before "Documents" or use the substituted version:
+    # "Important  " = "  "
+
+[docker_context]
+    symbol = " "
+    style = "bg:green fg:white"
+    format = '[ $symbol$context ]($style)$path'
+
+[kubernetes]
+    format = '[$symbol$context( \($namespace\)) ]($style)'
+    disabled = false
+    style = "bg:green fg:white"
+    # detect_folders = [ "_kustomize" ]
+
+[git_branch]
+    symbol = ""
+    style = "bg:yellow"
+    format = '[ $symbol $branch]($style)'
+
+[git_status]
+    style = "bg:yellow"
+    modified = "!$count "
+    stashed = '*$count '
+    ahead = '⇡${count} '
+    diverged = '⇕⇡${ahead_count}⇣${behind_count} '
+    behind = '⇣${count} '
+    format = '[ $all_status$ahead_behind]($style)'
+
+[c]
+    symbol = " "
+    style = "bg:purple fg:white"
+    format = '[ $symbol ($version) ]($style)'
+
+[golang]
+    symbol = " "
+    style = "bg:purple fg:white"
+    format = '[ $symbol ($version) ]($style)'
+
+[java]
+    symbol = " "
+    style = "bg:purple fg:white bold"
+    format = '[ $symbol($version) ]($style)'
+
+[nodejs]
+    symbol = ""
+    style = "bg:purple fg:white"
+    format = '[( $symbol $version )]($style)'
+
+[rust]
+    symbol = ""
+    style = "bg:purple fg:white"
+    format = '[ $symbol ($version) ]($style)'
+
+[status]
+    style = 'bg:red fg:white'
+    symbol = '✘ '
+    success_symbol = '✔ '
+    format = '[($symbol$common_meaning$signal_name$maybe_int)]($style)'
+    map_symbol = true
+    disabled = false
+
+[cmd_duration]
+    min_time = 500
+    style = "bg:cyan"
+    format = '[ $duration  ]($style)'
+
+[time]
+    disabled = false
+    time_format = "%R" # Hour:Minute Format
+    # style = "bg:#33658A"
+    style = "bg:green fg:white"
+    format = '[ ♥ $time ]($style)'

@@ -1,0 +1,5 @@
+.DS_Store
+plugins/zsh-*
+plugins/autoupdate
+themes/powerlevel10k
+custom/plugins
