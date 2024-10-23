@@ -11,25 +11,6 @@ symlinks:
 - - ~/.gitconfig
   - ~/.dotfiles/gitconfig
 bundle:
-  default:
-  - font-meslo-lg-nerd-font.cask
-  - karabiner-elements.cask
-  - obsidian.cask
-  - rectangle.cask
-  ai:
-  - chatgpt.cask
-  aws:
-  - awscli.bin
-  azure:
-  - azure-cli.bin
-  browsers:
-  - arc.cask
-  - microsoft-edge@dev.cask
-  - google-chrome@dev.cask
-  comms:
-  - discord.cask
-  - microsoft-teams.cask
-  - whatsapp@beta.cask
   databases:
   - postgresql@16.bin
   - dbeaver-community.cask
@@ -38,13 +19,31 @@ bundle:
   git:
   - gh.bin
   - microsoft/git/git-credential-manager.cask
-  iac:
-  - pulumi.bin
-  - project-planton/tap/cli.bin
+  azure:
+  - azure-cli.bin
+  comms:
+  - discord.cask
+  - microsoft-teams.cask
+  - whatsapp@beta.cask
+  browsers:
+  - arc.cask
+  - microsoft-edge@dev.cask
+  - google-chrome@dev.cask
+  aws:
+  - awscli.bin
   ide:
   - cursor.cask
   - visual-studio-code@insiders.cask
   - jetbrains-toolbox.cask
+  iac:
+  - pulumi.bin
+  - project-planton/tap/cli.bin
+  default:
+  - font-meslo-lg-nerd-font.cask
+  - karabiner-elements.cask
+  - obsidian.cask
+  - rectangle.cask
+  - zoxide.bin
   k8s:
   - orbstack.cask
   - helm.bin
@@ -55,3 +54,5 @@ bundle:
   lang:
   - golang.bin
   - rustup.bin
+  ai:
+  - chatgpt.cask

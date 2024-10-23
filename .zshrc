@@ -11,3 +11,4 @@ source ${0:A:h}/custom/hist_overrides.sh
 # source $DOT_FILES/custom/ssh.sh
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
