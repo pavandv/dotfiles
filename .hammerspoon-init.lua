@@ -54,3 +54,7 @@ SpoonInstall:andUse("AppLauncher", {
     },
     hotkeys = apps,
 });
+
+hs.hotkey.bind(shift_hyper, "=", function()
+    hs.application.launchOrFocus("System Settings")
+end)
