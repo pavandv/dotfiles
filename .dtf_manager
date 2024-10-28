@@ -11,33 +11,12 @@ symlinks:
 - - ~/.gitconfig
   - ~/.dotfiles/gitconfig
 bundle:
-  databases:
-  - postgresql@16.bin
-  - dbeaver-community.cask
-  gcloud:
-  - google-cloud-sdk.cask
-  git:
-  - gh.bin
-  - microsoft/git/git-credential-manager.cask
   azure:
   - azure-cli.bin
   comms:
   - discord.cask
   - microsoft-teams.cask
   - whatsapp@beta.cask
-  browsers:
-  - arc.cask
-  - microsoft-edge@dev.cask
-  - google-chrome@dev.cask
-  aws:
-  - awscli.bin
-  ide:
-  - cursor.cask
-  - visual-studio-code@insiders.cask
-  - jetbrains-toolbox.cask
-  iac:
-  - pulumi.bin
-  - project-planton/tap/cli.bin
   default:
   - font-meslo-lg-nerd-font.cask
   - karabiner-elements.cask
@@ -51,8 +30,30 @@ bundle:
   - kubectl.bin
   - kubectx.bin
   - stern.bin
+  - kustomize.bin
+  ai:
+  - chatgpt.cask
+  aws:
+  - awscli.bin
+  iac:
+  - pulumi.bin
+  - project-planton/tap/cli.bin
   lang:
   - golang.bin
   - rustup.bin
-  ai:
-  - chatgpt.cask
+  gcloud:
+  - google-cloud-sdk.cask
+  browsers:
+  - arc.cask
+  - microsoft-edge@dev.cask
+  - google-chrome@dev.cask
+  databases:
+  - postgresql@16.bin
+  - dbeaver-community.cask
+  git:
+  - gh.bin
+  - microsoft/git/git-credential-manager.cask
+  ide:
+  - cursor.cask
+  - visual-studio-code@insiders.cask
+  - jetbrains-toolbox.cask

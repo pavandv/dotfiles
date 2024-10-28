@@ -9,7 +9,7 @@ right_format = """
     $java\
     $nodejs\
     $rust\
-    []( bg:purple fg:green)\
+    [](bg:purple fg:green)\
     $kubernetes\
     $terraform\
     $pulumi\
