@@ -11,10 +11,10 @@
     # autoload -U +X bashcompinit && bashcompinit
     # complete -o nospace -C "$(brew --prefix)/bin/terraform" terraform
 
-    if type "gcloud" >&/dev/null; then
-        source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
-        source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
-    fi;
+    # if type "gcloud" >&/dev/null; then
+    #     source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+    #     source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+    # fi;
 
 ####
 
@@ -23,3 +23,6 @@
     zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
     zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 ###
+
+autoload -Uz compinit
+compinit

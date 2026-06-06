@@ -5,7 +5,7 @@ antigen bundles <<EOBUNDLES
     git
     kubectl
     npm
-    rust
+    # rust
     # ssh
     yarn
 
@@ -19,6 +19,10 @@ antigen bundles <<EOBUNDLES
 
     # Extra zsh completions
     zsh-users/zsh-completions
+
+    # pnpm plugin
+    ntnyq/omz-plugin-pnpm --branch=main
+    # bgowers/omz-pnpm
 EOBUNDLES
 
 antigen apply

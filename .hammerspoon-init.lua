@@ -6,16 +6,19 @@ local hyper       = {"cmd","alt","ctrl"}
 local shift_hyper = { "cmd", "alt", "ctrl", "shift" }
 
 local apps = {
-    a = "Arc",
+    a = "Dia",
     c = "Cursor",
     d = "Discord",
-    i = "IntelliJ IDEA Community Edition",
+    g = "ChatGPT",
+    -- i = "IntelliJ IDEA Community Edition",
+    i = "Codex",
     m = "Music",
-    n = "Notes",
+    n = "Notion",
     p = "Postman",
     r = "RustRover",
     s = "Safari",
-    w = "Warp",
+    w = "cmux",
+    t = "Ghostty",
 }
 
 hs.loadSpoon("SpoonInstall")
