@@ -4,10 +4,11 @@ antigen bundles <<EOBUNDLES
     # Bundles from the default repo (robbyrussell's oh-my-zsh)
     git
     kubectl
-    npm
+    # npm
     # rust
     # ssh
-    yarn
+    # yarn
+    brew
 
     lukechilds/zsh-nvm
 
@@ -21,8 +22,8 @@ antigen bundles <<EOBUNDLES
     zsh-users/zsh-completions
 
     # pnpm plugin
-    ntnyq/omz-plugin-pnpm --branch=main
-    # bgowers/omz-pnpm
+    # ntnyq/omz-plugin-pnpm --branch=main
+    bgowers/omz-pnpm --branch=main
 EOBUNDLES
 
 antigen apply

@@ -5,7 +5,7 @@
 #   export EDITOR='nvim'
 # fi
 
-export EDITOR="cursor";
+export EDITOR="code-insiders";
 
 export DOT_FILES=${DOT_FILES:-~/.dotfiles};
 export dtf_location=$DOT_FILES;
@@ -20,7 +20,7 @@ export PROFILE_BROWSER="safari"
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
-export NVM_LAZY_LOAD_EXTRA_COMMANDS=('yarn')
+export NVM_LAZY_LOAD_EXTRA_COMMANDS=('pnpm')
 export NVM_AUTO_USE=true
 export NVM_DIR=~/.nvm
 

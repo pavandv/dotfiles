@@ -7,7 +7,7 @@ local shift_hyper = { "cmd", "alt", "ctrl", "shift" }
 
 local apps = {
     a = "Dia",
-    c = "Cursor",
+    c = "Visual Studio Code - Insiders",
     d = "Discord",
     g = "ChatGPT",
     -- i = "IntelliJ IDEA Community Edition",

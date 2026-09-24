@@ -11,40 +11,27 @@ symlinks:
 - - ~/.gitconfig
   - ~/.dotfiles/gitconfig
 bundle:
-  databases:
-  - postgresql@16.bin
-  - dbeaver-community.cask
+  git:
+  - gh.bin
+  - microsoft/git/git-credential-manager.cask
   iac:
   - pulumi.bin
   - project-planton/tap/cli.bin
+  lang:
+  - golang.bin
+  - rustup.bin
+  azure:
+  - azure-cli.bin
   comms:
   - discord.cask
   - microsoft-teams.cask
   - whatsapp@beta.cask
-  ide:
-  - cursor.cask
-  - visual-studio-code@insiders.cask
-  - jetbrains-toolbox.cask
-  git:
-  - gh.bin
-  - microsoft/git/git-credential-manager.cask
-  lang:
-  - golang.bin
-  - rustup.bin
-  ai:
-  - chatgpt.cask
-  azure:
-  - azure-cli.bin
-  notes:
-  - notion.cask
-  default:
-  - font-meslo-lg-nerd-font.cask
-  - karabiner-elements.cask
-  - obsidian.cask
-  - rectangle.cask
-  - zoxide.bin
   gcloud:
   - google-cloud-sdk.cask
+  ai:
+  - chatgpt.cask
+  aws:
+  - awscli.bin
   k8s:
   - orbstack.cask
   - helm.bin
@@ -53,10 +40,22 @@ bundle:
   - kubectx.bin
   - stern.bin
   - kustomize.bin
-  aws:
-  - awscli.bin
+  databases:
+  - postgresql@16.bin
+  - dbeaver-community.cask
+  ide:
+  - cursor.cask
+  - visual-studio-code@insiders.cask
+  - jetbrains-toolbox.cask
+  notes:
+  - notion.cask
+  default:
+  - font-meslo-lg-nerd-font.cask
+  - karabiner-elements.cask
+  - obsidian.cask
+  - rectangle.cask
+  - zoxide.bin
   browsers:
   - arc.cask
   - microsoft-edge@dev.cask
   - google-chrome@dev.cask
-  - zen-browser.cask
