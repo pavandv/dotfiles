@@ -10,6 +10,8 @@ symlinks:
   - ~/.dotfiles/.hammerspoon-init.lua
 - - ~/.gitconfig
   - ~/.dotfiles/gitconfig
+- - ~/Library/Application\ Support/com.mitchellh.ghostty/config
+  - ~/.dotfiles/.ghostty
 bundle:
   git:
   - gh.bin
