@@ -58,6 +58,6 @@ bundle:
   - rectangle.cask
   - zoxide.bin
   browsers:
-  - arc.cask
+  - thebrowsercompany-dia.cask
   - microsoft-edge@dev.cask
   - google-chrome@dev.cask
